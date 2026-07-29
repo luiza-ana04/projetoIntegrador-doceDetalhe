@@ -2,3 +2,31 @@
     padding: 0;
     margin: 0;
 }
+
+:root {
+    --c1: #ffffff;
+    --c2: #E2D9CB;
+    --c3: #5A3A2A;
+    --c4: #56061D;
+    --c5: #517493;
+    --c6: #022E4C;
+}
+
+#menuPrincipal {
+    background-color: transparent !important;
+    height: 120px;
+    z-index: 10;
+}
+
+#imgPrincipal {
+    height: 900px;
+    width: 100%;
+    object-fit: cover;
+    z-index: -999;
+}
+
+#logo {
+    margin-top: 55px;
+    width: 15%;
+}
+
