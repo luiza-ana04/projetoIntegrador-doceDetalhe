@@ -813,7 +813,7 @@ h3 {
 /*11. RODAPÉ*/
 .main-footer {
    position: relative;
-   color: #f5ddd2;
+   color: white;
    background: radial-gradient(circle at 95% 100%, rgba(200, 148, 76, .14), transparent 25%), linear-gradient(110deg, #4c0711, #690915 60%, #3d050d);
 }
 
