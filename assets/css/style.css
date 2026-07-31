@@ -384,6 +384,7 @@ h3 {
 
 .category-item {
    display: flex;
+   min-height: 180px;
    align-items: center;
    gap: 14px;
    padding: 14px 22px;
@@ -399,12 +400,12 @@ h3 {
 }
 
 .category-item h3 {
-   font-size: 1rem;
+   font-size: 1.25rem;
 }
 
 .category-item p {
    color: var(--muted);
-   font-size: .64rem;
+   font-size: 0.95rem;
    line-height: 1.45;
 }
 
@@ -457,6 +458,10 @@ h3 {
 }
 
 .product-card-content {
+       min-height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
    padding: 20px 17px 18px;
    text-align: center;
 }
