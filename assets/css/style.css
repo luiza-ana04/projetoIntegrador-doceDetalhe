@@ -46,6 +46,27 @@ a {
    text-decoration: none;
 }
 
+
+.main-nav a {
+    position: relative;
+    display: inline-block;
+    color: var(--wine);
+    text-decoration: none;
+    margin-bottom: 10px;
+}
+ 
+.main-nav a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    width: 0;
+    height: 2px;
+    background-color: #D4AF37;
+    /* dourado */
+    transition: width 0.3s ease;
+}
+
 button,
 input {
    font: inherit;
@@ -123,19 +144,20 @@ h3 {
    box-shadow: 0 12px 28px rgba(109, 7, 21, .24);
 }
 
-.button-primary:hover {
+.button-primary:hover { 
+   color: var(--white);
    transform: translateY(-2px);
    background: linear-gradient(135deg, #a1142c, var(--wine));
 }
 
 .button-outline {
-   color: var(--gold-light);
+   color: var(--white);
    border-color: var(--gold);
    background: rgba(7, 29, 53, .25);
 }
 
 .button-outline:hover {
-   color: var(--navy);
+   color: var(--white);
    background: var(--gold-light);
 }
 
