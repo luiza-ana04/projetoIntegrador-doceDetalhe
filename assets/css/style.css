@@ -432,6 +432,16 @@ h3 {
 }
 
 /* 7. CARDÁPIO */
+
+#texto {
+    color: var(--navy);
+    transition: color 0.3s ease;
+}
+
+#texto:hover {
+    color: var(--wine);
+}
+
 .menu-section {
    background: linear-gradient(180deg, #f7eee5, #fbf7f2);
 }
@@ -938,6 +948,9 @@ h3 {
 .nav-link:hover {
     color: #D4AF37;
 }
+
+
+
 
 /*12. RESPONSIVIDADE*/
 @media (max-width: 1120px) {

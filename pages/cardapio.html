@@ -7,6 +7,14 @@
     <meta name="description"
         content="Página preparada para receber categorias, sabores, tamanhos e valores dos produtos.">
     <title>Cardápio | Doce Detalhe</title>
+
+      <!-- Bootstrap -->
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Bootstrap Icons -->
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">     
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -39,18 +47,1097 @@
                 <h1>Cardápio</h1>
             </div>
         </section>
-        <section class="page-content">
-            <div class="container">
-                <article class="page-card">
-                    <h2>Página em desenvolvimento</h2>
-                    <p>Página preparada para receber categorias, sabores, tamanhos e valores dos produtos.</p>
-                    <p>A estrutura já está pronta para que o conteúdo seja incluído sem alterar a organização principal
-                        do projeto.</p><a class="button button-primary" href="../index.html">Voltar ao início</a>
-                </article>
-            </div>
-        </section>
     </main>
-    <script type="module" src="../assets/js/main.js"></script>
+<div class="container py-5">
+
+    <!-- ======================================= -->
+    <!-- BARRA DE PESQUISA -->
+    <!-- ======================================= -->
+
+    <div class="input-group search" style="border-color: var(--navy);">
+
+        <span class="input-group-text"  style="background-color: var(--navy);">
+            <i class="bi bi-search" style="color: white;"></i>
+        </span>
+
+        <input
+            id="pesquisa"
+            class="form-control"
+            style="border-color: var(--navy);"
+            placeholder="Pesquise um produto..."
+        >
+
+    </div>
+
+    <div class="row g-4">
+
+        <!-- ======================================= -->
+        <!-- BRIGADEIROS GOURMET -->
+        <!-- ======================================= -->
+
+        <div class="col-12 col-md-6 col-lg-4 produto">
+
+            <div class="card h-100">
+
+                <div class="ph">
+                   <img src="../assets/img/brigadeiro.png" alt="Foto moderna de um brigadeiro.">
+                </div>
+
+                <div class="card-body">
+
+                    <h5 class="nome">
+                        Brigadeiros Gourmet
+                    </h5>
+
+                    <span class="badge" style="color: white;background-color: var(--wine-dark)">Tradicional</span>
+                    <span class="badge" style="color: white;background-color: var(--wine-dark)">Pistache</span>
+                    <span class="badge" style="color: white;background-color: var(--wine-dark)">Leite em Pó</span>
+                    <span class="badge" style="color: white;background-color: var(--wine-dark)">Churros</span>
+                    <span class="badge" style="color: white;background-color: var(--wine-dark)">Maracujá</span>
+
+                    <div class="input-group mt-3" style="color: white; background-color: var(--navy-soft); border-color: var(--navy-soft); border-radius: 5px;">
+
+                            
+                        <button class="btn btn-outline-secondary">
+                            <i class="bi bi-dash"></i>
+                        </button>
+
+                        <input
+                            class="form-control text-center"
+                            value="1"
+                        >
+
+                        <button class="btn btn-outline-secondary"  style="color: white; background-color: var(--navy-soft); border-color: var(--navy-soft); border-radius: 5px;">
+                            <i class="bi bi-plus"></i>
+                        </button>
+
+                    </div>
+
+                    <button class="btn btn-encomenda w-100 mt-3" id="texto">
+                        <i class="bi bi-cart-plus me-2"></i>
+                        Adicionar
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- ======================================= -->
+        <!-- BROWNIES -->
+        <!-- ======================================= -->
+
+        <div class="col-12 col-md-6 col-lg-4 produto">
+
+            <div class="card h-100">
+
+                <div class="ph">
+                  <img src="../assets/img/browniee.png" alt="Imagem moderna de um brownie.">
+                </div>
+
+                <div class="card-body">
+
+                    <h5 class="nome">
+                        Brownies
+                    </h5>
+
+                    <span class="badge" style="color: white;background-color: var(--wine-dark)">Tradicional</span>
+                    <span class="badge" style="color: white;background-color: var(--wine-dark)">Doce de Leite</span>
+                    <span class="badge" style="color: white;background-color: var(--wine-dark)">Nutella</span>
+                    <span class="badge" style="color: white;background-color: var(--wine-dark)">Oreo</span>
+                    <span class="badge" style="color: white;background-color: var(--wine-dark)">Nozes</span>
+
+                    <div class="input-group mt-3">
+
+                        <button class="btn btn-outline-secondary" style="color: white; background-color: var(--navy-soft); border-color: var(--navy-soft); border-radius: 5px;">
+                            <i class="bi bi-dash"></i>
+                        </button>
+
+                        <input
+                            class="form-control text-center"
+                            value="1"
+                        >
+
+                        <button class="btn btn-outline-secondary" style="color: white; background-color: var(--navy-soft); border-color: var(--navy-soft); border-radius: 5px;">
+                            <i class="bi bi-plus"></i>
+                        </button>
+
+                    </div>
+
+                    <button class="btn btn-encomenda w-100 mt-3" id="texto">
+                        <i class="bi bi-cart-plus me-2"></i>
+                        Adicionar
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- ======================================= -->
+        <!-- COOKIES -->
+        <!-- ======================================= -->
+
+        <div class="col-12 col-md-6 col-lg-4 produto">
+
+            <div class="card h-100">
+
+                <div class="ph">
+                    <img src="../assets/img/cookies.png" alt="Imagem moderna de um cookie.">
+                </div>
+
+                <div class="card-body">
+
+                    <h5 class="nome">
+                        Cookies
+                    </h5>
+
+                    <span class="badge" style="color: white;background-color: var(--wine-dark)">Chocolate Belga</span>
+                    <span class="badge" style="color: white;background-color: var(--wine-dark)">Nutella</span>
+                    <span class="badge" style="color: white;background-color: var(--wine-dark)">Red Velvet</span>
+                    <span class="badge" style="color: white;background-color: var(--wine-dark)">Pistache</span>
+                    <span class="badge" style="color: white;background-color: var(--wine-dark)">M&M's</span>
+
+                    <div class="input-group mt-3">
+
+                        <button class="btn btn-outline-secondary" style="color: white; background-color: var(--navy-soft); border-color: var(--navy-soft); border-radius: 5px;">
+                            <i class="bi bi-dash"></i>
+                        </button>
+
+                        <input
+                            class="form-control text-center"
+                            value="1"
+                        >
+
+                        <button class="btn btn-outline-secondary" style="color: white; background-color: var(--navy-soft); border-color: var(--navy-soft); border-radius: 5px;">
+                            <i class="bi bi-plus"></i>
+                        </button>
+
+                    </div>
+
+                    <button class="btn btn-encomenda w-100 mt-3" id="texto">
+                        <i class="bi bi-cart-plus me-2"></i>
+                        Adicionar
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+                <!-- ======================================= -->
+        <!-- MINI CHURROS -->
+        <!-- ======================================= -->
+
+        <div class="col-12 col-md-6 col-lg-4 produto">
+
+            <div class="card h-100">
+
+                <div class="ph">
+                  <img src="../assets/img/churros (2).png" alt="Imagem moderna de mini churros.">
+                </div>
+
+                <div class="card-body">
+
+                    <h5 class="nome">
+                        Mini Churros
+                    </h5>
+
+                    <span class="badge" style="color: white;background-color: var(--wine-dark)">Doce de Leite</span>
+                    <span class="badge" style="color: white;background-color: var(--wine-dark)">Nutella</span>
+                    <span class="badge" style="color: white;background-color: var(--wine-dark)">Brigadeiro</span>
+                    <span class="badge" style="color: white;background-color: var(--wine-dark)">Pistache</span>
+                    <span class="badge" style="color: white;background-color: var(--wine-dark)">Chocolate Branco</span>
+
+                    <div class="input-group mt-3">
+
+                        <button class="btn btn-outline-secondary" style="color: white; background-color: var(--navy-soft); border-color: var(--navy-soft); border-radius: 5px;">
+                            <i class="bi bi-dash"></i>
+                        </button>
+
+                        <input
+                            class="form-control text-center"
+                            value="1"
+                        >
+
+                        <button class="btn btn-outline-secondary" style="color: white; background-color: var(--navy-soft); border-color: var(--navy-soft); border-radius: 5px;">
+                            <i class="bi bi-plus"></i>
+                        </button>
+
+                    </div>
+
+                    <button class="btn btn-encomenda w-100 mt-3" id="texto">
+                        <i class="bi bi-cart-plus me-2"></i>
+                        Adicionar
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- ======================================= -->
+        <!-- TRUFAS ARTESANAIS -->
+        <!-- ======================================= -->
+
+        <div class="col-12 col-md-6 col-lg-4 produto">
+
+            <div class="card h-100">
+
+                <div class="ph">
+                 <img src="../assets/img/trufass.png" alt="Imagem moderna de trufas artesanais.">
+                </div>
+
+                <div class="card-body">
+
+                    <h5 class="nome">
+                        Trufas Artesanais
+                    </h5>
+
+                    <span class="badge" style="color: white;background-color: var(--wine-dark)">Chocolate Belga</span>
+                    <span class="badge" style="color: white;background-color: var(--wine-dark)">Pistache</span>
+                    <span class="badge" style="color: white;background-color: var(--wine-dark)">Maracujá</span>
+                    <span class="badge" style="color: white;background-color: var(--wine-dark)">Café</span>
+                    <span class="badge" style="color: white;background-color: var(--wine-dark)">Avelã</span>
+
+                    <div class="input-group mt-3">
+
+                        <button class="btn btn-outline-secondary" style="color: white; background-color: var(--navy-soft); border-color: var(--navy-soft); border-radius: 5px;">
+                            <i class="bi bi-dash"></i>
+                        </button>
+
+                        <input
+                            class="form-control text-center"
+                            value="1"
+                        >
+
+                        <button class="btn btn-outline-secondary" style="color: white; background-color: var(--navy-soft); border-color: var(--navy-soft); border-radius: 5px;">
+                            <i class="bi bi-plus"></i>
+                        </button>
+
+                    </div>
+
+                    <button class="btn btn-encomenda w-100 mt-3" id="texto">
+                        <i class="bi bi-cart-plus me-2"></i>
+                        Adicionar
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- ======================================= -->
+        <!-- MACARONS -->
+        <!-- ======================================= -->
+
+        <div class="col-12 col-md-6 col-lg-4 produto">
+
+            <div class="card h-100">
+
+                <div class="ph">
+                    <img src="../assets/img/macaronss.png" alt="Imagem moderna de macarons.">
+                </div>
+
+                <div class="card-body">
+
+                    <h5 class="nome">
+                        Macarons
+                    </h5>
+
+                    <span class="badge" style="color: white;background-color: var(--wine-dark)">Pistache</span>
+                    <span class="badge" style="color: white;background-color: var(--wine-dark)">Framboesa</span>
+                    <span class="badge" style="color: white;background-color: var(--wine-dark)">Chocolate Belga</span>
+                    <span class="badge" style="color: white;background-color: var(--wine-dark)">Limão-Siciliano</span>
+                    <span class="badge" style="color: white;background-color: var(--wine-dark)">Baunilha</span>
+
+                    <div class="input-group mt-3">
+
+                        <button class="btn btn-outline-secondary" style="color: white; background-color: var(--navy-soft); border-color: var(--navy-soft); border-radius: 5px;">
+                            <i class="bi bi-dash"></i>
+                        </button>
+
+                        <input
+                            class="form-control text-center"
+                            value="1"
+                        >
+
+                        <button class="btn btn-outline-secondary" style="color: white; background-color: var(--navy-soft); border-color: var(--navy-soft); border-radius: 5px;">
+                            <i class="bi bi-plus"></i>
+                        </button>
+
+                    </div>
+
+                    <button class="btn btn-encomenda w-100 mt-3" id="texto">
+                        <i class="bi bi-cart-plus me-2"></i>
+                        Adicionar
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- ======================================= -->
+        <!-- PASTÉIS DE BELÉM -->
+        <!-- ======================================= -->
+
+        <div class="col-12 col-md-6 col-lg-4 produto">
+
+            <div class="card h-100">
+
+                <div class="ph">
+                    <i class="bi bi-image fs-1"></i>
+                    <small>Foto do produto</small>
+                </div>
+
+                <div class="card-body">
+
+                    <h5 class="nome">
+                        Pastéis de Belém
+                    </h5>
+
+                    <span class="badge">Tradicional</span>
+
+                    <div class="input-group mt-3">
+
+                        <button class="btn btn-outline-secondary" style="color: white; background-color: var(--navy-soft); border-color: var(--navy-soft); border-radius: 5px;">
+                            <i class="bi bi-dash"></i>
+                        </button>
+
+                        <input
+                            class="form-control text-center"
+                            value="1"
+                        >
+
+                        <button class="btn btn-outline-secondary" style="color: white; background-color: var(--navy-soft); border-color: var(--navy-soft); border-radius: 5px;">
+                            <i class="bi bi-plus"></i>
+                        </button>
+
+                    </div>
+
+                    <button class="btn btn-encomenda w-100 mt-3" id="texto">
+                        <i class="bi bi-cart-plus me-2"></i>
+                        Adicionar
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- ======================================= -->
+        <!-- MIL-FOLHAS -->
+        <!-- ======================================= -->
+
+        <div class="col-12 col-md-6 col-lg-4 produto">
+
+            <div class="card h-100">
+
+                <div class="ph">
+                    <i class="bi bi-image fs-1"></i>
+                    <small>Foto do produto</small>
+                </div>
+
+                <div class="card-body">
+
+                    <h5 class="nome">
+                        Mil-folhas
+                    </h5>
+
+                    <span class="badge" style="color: white;background-color: var(--wine-dark)">Tradicional</span>
+                    <span class="badge" style="color: white;background-color: var(--wine-dark)">Morango</span>
+                    <span class="badge" style="color: white;background-color: var(--wine-dark)">Chocolate</span>
+                    <span class="badge" style="color: white;background-color: var(--wine-dark)">Pistache</span>
+                    <span class="badge" style="color: white;background-color: var(--wine-dark)">Doce de Leite</span>
+
+                    <div class="input-group mt-3">
+
+                        <button class="btn btn-outline-secondary" style="color: white; background-color: var(--navy-soft); border-color: var(--navy-soft); border-radius: 5px;">
+                            <i class="bi bi-dash"></i>
+                        </button>
+
+                        <input
+                            class="form-control text-center"
+                            value="1"
+                        >
+
+                        <button class="btn btn-outline-secondary" style="color: white; background-color: var(--navy-soft); border-color: var(--navy-soft); border-radius: 5px;">
+                            <i class="bi bi-plus"></i>
+                        </button>
+
+                    </div>
+
+                    <button class="btn btn-encomenda w-100 mt-3" id="texto">
+                        <i class="bi bi-cart-plus me-2"></i>
+                        Adicionar
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+                <!-- ======================================= -->
+        <!-- CROISSANTS DOCES -->
+        <!-- ======================================= -->
+
+        <div class="col-12 col-md-6 col-lg-4 produto">
+
+            <div class="card h-100">
+
+                <div class="ph">
+                    <i class="bi bi-image fs-1"></i>
+                    <small>Foto do produto</small>
+                </div>
+
+                <div class="card-body">
+
+                    <h5 class="nome">
+                        Croissants Doces
+                    </h5>
+
+                    <span class="badge" style="color: white;background-color: var(--wine-dark)">Chocolate</span>
+                    <span class="badge" style="color: white;background-color: var(--wine-dark)">Pistache</span>
+                    <span class="badge" style="color: white;background-color: var(--wine-dark)">Nutella</span>
+                    <span class="badge" style="color: white;background-color: var(--wine-dark)">Doce de Leite</span>
+                    <span class="badge" style="color: white;background-color: var(--wine-dark)">Creme de Baunilha</span>
+
+                    <div class="input-group mt-3">
+
+                        <button class="btn btn-outline-secondary" style="color: white; background-color: var(--navy-soft); border-color: var(--navy-soft); border-radius: 5px;">
+                            <i class="bi bi-dash"></i>
+                        </button>
+
+                        <input
+                            class="form-control text-center"
+                            value="1"
+                        >
+
+                        <button class="btn btn-outline-secondary" style="color: white; background-color: var(--navy-soft); border-color: var(--navy-soft); border-radius: 5px;">
+                            <i class="bi bi-plus"></i>
+                        </button>
+
+                    </div>
+
+                    <button class="btn btn-encomenda w-100 mt-3" id="texto">
+                        <i class="bi bi-cart-plus me-2"></i>
+                        Adicionar
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- ======================================= -->
+        <!-- ENTREMETS -->
+        <!-- ======================================= -->
+
+        <div class="col-12 col-md-6 col-lg-4 produto">
+
+            <div class="card h-100">
+
+                <div class="ph">
+            <img src="../assets/img/entremett.png" alt="Foto moderna de entremet.">
+                </div>
+
+                <div class="card-body">
+
+                    <h5 class="nome">
+                        Entremets
+                    </h5>
+
+                    <span class="badge" style="color: white;background-color: var(--wine-dark)">Chocolate e Framboesa</span>
+                    <span class="badge" style="color: white;background-color: var(--wine-dark)">Pistache e Framboesa</span>
+                    <span class="badge" style="color: white;background-color: var(--wine-dark)">Limão-Siciliano</span>
+                    <span class="badge" style="color: white;background-color: var(--wine-dark)">Baunilha com Caramelo</span>
+                    <span class="badge" style="color: white;background-color: var(--wine-dark)">Três Chocolates</span>
+
+                    <div class="input-group mt-3">
+
+                        <button class="btn btn-outline-secondary" style="color: white; background-color: var(--navy-soft); border-color: var(--navy-soft); border-radius: 5px;">
+                            <i class="bi bi-dash"></i>
+                        </button>
+
+                        <input
+                            class="form-control text-center"
+                            value="1"
+                        >
+
+                        <button class="btn btn-outline-secondary" style="color: white; background-color: var(--navy-soft); border-color: var(--navy-soft); border-radius: 5px;">
+                            <i class="bi bi-plus"></i>
+                        </button>
+
+                    </div>
+
+                    <button class="btn btn-encomenda w-100 mt-3" id="texto">
+                        <i class="bi bi-cart-plus me-2"></i>
+                        Adicionar
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- ======================================= -->
+        <!-- BOLOS CONFEITADOS -->
+        <!-- ======================================= -->
+
+        <div class="col-12 col-md-6 col-lg-4 produto">
+
+            <div class="card h-100">
+
+                <div class="ph">
+                    <img src="../assets/img/boloc.png" alt="Foto moderna de um bolo confeitado.">
+                </div>
+
+                <div class="card-body">
+
+                    <h5 class="nome">
+                        Bolos Confeitados
+                    </h5>
+
+                    <span class="badge" style="color: white;background-color: var(--wine-dark)">Chocolate Belga</span>
+                    <span class="badge" style="color: white;background-color: var(--wine-dark)">Red Velvet</span>
+                    <span class="badge" style="color: white;background-color: var(--wine-dark)">Leite Ninho com Morango</span>
+                    <span class="badge" style="color: white;background-color: var(--wine-dark)">Pistache</span>
+                    <span class="badge" style="color: white;background-color: var(--wine-dark)">Cenoura com Brigadeiro</span>
+
+                    <div class="input-group mt-3">
+
+                        <button class="btn btn-outline-secondary" style="color: white; background-color: var(--navy-soft); border-color: var(--navy-soft); border-radius: 5px;">
+                            <i class="bi bi-dash"></i>
+                        </button>
+
+                        <input
+                            class="form-control text-center"
+                            value="1"
+                        >
+
+                        <button class="btn btn-outline-secondary" style="color: white; background-color: var(--navy-soft); border-color: var(--navy-soft); border-radius: 5px;">
+                            <i class="bi bi-plus"></i>
+                        </button>
+
+                    </div>
+
+                    <button class="btn btn-encomenda w-100 mt-3" id="texto">
+                        <i class="bi bi-cart-plus me-2"></i>
+                        Adicionar
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- ======================================= -->
+        <!-- TORTAS DOCES -->
+        <!-- ======================================= -->
+
+        <div class="col-12 col-md-6 col-lg-4 produto">
+
+            <div class="card h-100">
+
+                <div class="ph">
+                    <i class="bi bi-image fs-1"></i>
+                    <small>Foto do produto</small>
+                </div>
+
+                <div class="card-body">
+
+                    <h5 class="nome">
+                        Tortas Doces
+                    </h5>
+
+                    <span class="badge" style="color: white;background-color: var(--wine-dark)">Banoffee</span>
+                    <span class="badge" style="color: white;background-color: var(--wine-dark)">Morangoffe</span>
+                    <span class="badge" style="color: white;background-color: var(--wine-dark)">Limão-Siciliano</span>
+                    <span class="badge" style="color: white;background-color: var(--wine-dark)">Chocolate Belga</span>
+                    <span class="badge" style="color: white;background-color: var(--wine-dark)  ">Frutas Vermelhas</span>
+
+                    <div class="input-group mt-3">
+
+                        <button class="btn btn-outline-secondary" style="color: white; background-color: var(--navy-soft); border-color: var(--navy-soft); border-radius: 5px;">
+                            <i class="bi bi-dash"></i>
+                        </button>
+
+                        <input
+                            class="form-control text-center"
+                            value="1"
+                        >
+
+                        <button class="btn btn-outline-secondary" style="color: white; background-color: var(--navy-soft); border-color: var(--navy-soft); border-radius: 5px;">
+                            <i class="bi bi-plus"></i>
+                        </button>
+
+                    </div>
+
+                    <button class="btn btn-encomenda w-100 mt-3" id="texto">
+                        <i class="bi bi-cart-plus me-2"></i>
+                        Adicionar
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- ======================================= -->
+        <!-- MINI TORTAS DOCES -->
+        <!-- ======================================= -->
+
+        <div class="col-12 col-md-6 col-lg-4 produto">
+
+            <div class="card h-100">
+
+                <div class="ph">
+                    <i class="bi bi-image fs-1"></i>
+                    <small>Foto do produto</small>
+                </div>
+
+                <div class="card-body">
+
+                    <h5 class="nome">
+                        Mini Tortas Doces
+                    </h5>
+
+                    <span class="badge" style="color: white;background-color: var(--wine-dark)">Limão-Siciliano</span>
+                    <span class="badge" style="color: white;background-color: var(--wine-dark)">Morango</span>
+                    <span class="badge" style="color: white;background-color: var(--wine-dark)">Frutas Vermelhas</span>
+                    <span class="badge" style="color: white;background-color: var(--wine-dark)">Banoffee</span>
+                    <span class="badge" style="color: white;background-color: var(--wine-dark)">Chocolate</span>
+
+                    <div class="input-group mt-3">
+
+                        <button class="btn btn-outline-secondary" style="color: white; background-color: var(--navy-soft); border-color: var(--navy-soft); border-radius: 5px;">
+                            <i class="bi bi-dash"></i>
+                        </button>
+
+                        <input
+                            class="form-control text-center"
+                            value="1"
+                        >
+
+                        <button class="btn btn-outline-secondary" style="color: white; background-color: var(--navy-soft); border-color: var(--navy-soft); border-radius: 5px;">
+                            <i class="bi bi-plus"></i>
+                        </button>
+
+                    </div>
+
+                    <button class="btn btn-encomenda w-100 mt-3" id="texto">
+                        <i class="bi bi-cart-plus me-2"></i>
+                        Adicionar
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+                <!-- ======================================= -->
+        <!-- CUPCAKES -->
+        <!-- ======================================= -->
+
+        <div class="col-12 col-md-6 col-lg-4 produto">
+
+            <div class="card h-100">
+
+                <div class="ph">
+                    <i class="bi bi-image fs-1"></i>
+                    <small>Foto do produto</small>
+                </div>
+
+                <div class="card-body">
+
+                    <h5 class="nome">
+                        Cupcakes
+                    </h5>
+
+                    <span class="badge" style="color: white;background-color: var(--wine-dark)">Chocolate</span>
+                    <span class="badge" style="color: white;background-color: var(--wine-dark)">Baunilha</span>
+                    <span class="badge" style="color: white;background-color: var(--wine-dark)">Red Velvet</span>
+                    <span class="badge" style="color: white;background-color: var(--wine-dark)">Cenoura com Brigadeiro</span>
+                    <span class="badge" style="color: white;background-color: var(--wine-dark)">Limão</span>
+
+                    <div class="input-group mt-3">
+
+                        <button class="btn btn-outline-secondary" style="color: white; background-color: var(--navy-soft); border-color: var(--navy-soft); border-radius: 5px;">
+                            <i class="bi bi-dash"></i>
+                        </button>
+
+                        <input
+                            class="form-control text-center"
+                            value="1"
+                        >
+
+                        <button class="btn btn-outline-secondary" style="color: white; background-color: var(--navy-soft); border-color: var(--navy-soft); border-radius: 5px;">
+                            <i class="bi bi-plus"></i>
+                        </button>
+
+                    </div>
+
+                    <button class="btn btn-encomenda w-100 mt-3" id="texto">
+                        <i class="bi bi-cart-plus me-2"></i>
+                        Adicionar
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- ======================================= -->
+        <!-- PUDINS ARTESANAIS -->
+        <!-- ======================================= -->
+
+        <div class="col-12 col-md-6 col-lg-4 produto">
+
+            <div class="card h-100">
+
+                <div class="ph">
+                    <i class="bi bi-image fs-1"></i>
+                    <small>Foto do produto</small>
+                </div>
+
+                <div class="card-body">
+
+                    <h5 class="nome">
+                        Pudins Artesanais
+                    </h5>
+
+                    <span class="badge" style="color: white;background-color: var(--wine-dark)">Tradicional</span>
+                    <span class="badge" style="color: white;background-color: var(--wine-dark)">Pão</span>
+                    <span class="badge" style="color: white;background-color: var(--wine-dark)">Chocolate</span>
+
+                    <div class="input-group mt-3">
+
+                        <button class="btn btn-outline-secondary" style="color: white; background-color: var(--navy-soft); border-color: var(--navy-soft); border-radius: 5px;">
+                            <i class="bi bi-dash"></i>
+                        </button>
+
+                        <input
+                            class="form-control text-center"
+                            value="1"
+                        >
+
+                        <button class="btn btn-outline-secondary" style="color: white; background-color: var(--navy-soft); border-color: var(--navy-soft); border-radius: 5px;">
+                            <i class="bi bi-plus"></i>
+                        </button>
+
+                    </div>
+
+                    <button class="btn btn-encomenda w-100 mt-3" id="texto">
+                        <i class="bi bi-cart-plus me-2"></i>
+                        Adicionar
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- ======================================= -->
+        <!-- TIRAMISU -->
+        <!-- ======================================= -->
+
+        <div class="col-12 col-md-6 col-lg-4 produto">
+
+            <div class="card h-100">
+
+                <div class="ph">
+                    <i class="bi bi-image fs-1"></i>
+                    <small>Foto do produto</small>
+                </div>
+
+                <div class="card-body">
+
+                    <h5 class="nome">
+                        Tiramisu
+                    </h5>
+
+                    <span class="badge" style="color: white;background-color: var(--wine-dark)">Tradicional</span>
+
+                    <div class="input-group mt-3">
+
+                        <button class="btn btn-outline-secondary" style="color: white; background-color: var(--navy-soft); border-color: var(--navy-soft); border-radius: 5px;">
+                            <i class="bi bi-dash"></i>
+                        </button>
+
+                        <input
+                            class="form-control text-center"
+                            value="1"
+                        >
+
+                        <button class="btn btn-outline-secondary" style="color: white; background-color: var(--navy-soft); border-color: var(--navy-soft); border-radius: 5px;">
+                            <i class="bi bi-plus"></i>
+                        </button>
+
+                    </div>
+
+                    <button class="btn btn-encomenda w-100 mt-3" id="texto">
+                        <i class="bi bi-cart-plus me-2"></i>
+                        Adicionar
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- ======================================= -->
+        <!-- MOUSSES -->
+        <!-- ======================================= -->
+
+        <div class="col-12 col-md-6 col-lg-4 produto">
+
+            <div class="card h-100">
+
+                <div class="ph">
+                    <i class="bi bi-image fs-1"></i>
+                    <small>Foto do produto</small>
+                </div>
+
+                <div class="card-body">
+
+                    <h5 class="nome">
+                        Mousses
+                    </h5>
+
+                    <span class="badge" style="color: white;background-color: var(--wine-dark)">Chocolate</span>
+                    <span class="badge" style="color: white;background-color: var(--wine-dark)">Maracujá</span>
+                    <span class="badge" style="color: white;background-color: var(--wine-dark)">Limão-Siciliano</span>
+                    <span class="badge" style="color: white;background-color: var(--wine-dark)">Morango</span>
+                    <span class="badge" style="color: white;background-color: var(--wine-dark)">Pistache</span>
+
+                    <div class="input-group mt-3">
+
+                        <button class="btn btn-outline-secondary" style="color: white; background-color: var(--navy-soft); border-color: var(--navy-soft); border-radius: 5px;" >
+                            <i class="bi bi-dash"></i>
+                        </button>
+
+                        <input
+                            class="form-control text-center"
+                            value="1"
+                        >
+
+                        <button class="btn btn-outline-secondary">
+                            <i class="bi bi-plus"></i>
+                        </button>
+
+                    </div>
+
+                    <button class="btn btn-encomenda w-100 mt-3" id="texto">
+                        <i class="bi bi-cart-plus me-2"></i>
+                        Adicionar
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- ======================================= -->
+        <!-- PETIT GÂTEAU -->
+        <!-- ======================================= -->
+
+        <div class="col-12 col-md-6 col-lg-4 produto">
+
+            <div class="card h-100">
+
+                <div class="ph">
+                    <i class="bi bi-image fs-1"></i>
+                    <small>Foto do produto</small>
+                </div>
+
+                <div class="card-body">
+
+                    <h5 class="nome">
+                        Petit Gâteau
+                    </h5>
+
+                    <span class="badge" style="color: white;background-color: var(--wine-dark)">Tradicional</span>
+                    <span class="badge" style="color: white;background-color: var(--wine-dark)      ">Doce de Leite</span>
+
+                    <div class="input-group mt-3">
+
+                        <button class="btn btn-outline-secondary" style="color: white; background-color: var(--navy-soft); border-color: var(--navy-soft); border-radius: 5px;">
+                            <i class="bi bi-dash"></i>
+                        </button>
+
+                        <input
+                            class="form-control text-center"
+                            value="1"
+                        >
+
+                        <button class="btn btn-outline-secondary" style="color: white; background-color: var(--navy-soft); border-color: var(--navy-soft); border-radius: 5px;">
+                            <i class="bi bi-plus"></i>
+                        </button>
+
+                    </div>
+
+                    <button class="btn btn-encomenda w-100 mt-3" id="texto">
+                        <i class="bi bi-cart-plus me-2"></i>
+                        Adicionar
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- ======================================= -->
+        <!-- FONDUE -->
+        <!-- ======================================= -->
+
+        <div class="col-12 col-md-6 col-lg-4 produto">
+
+            <div class="card h-100">
+
+                <div class="ph">
+                    <i class="bi bi-image fs-1"></i>
+                    <small>Foto do produto</small>
+                </div>
+
+                <div class="card-body">
+
+                    <h5 class="nome">
+                        Fondue
+                    </h5>
+
+                    <span class="badge" style="color: white;background-color: var(--wine-dark)">Chocolate Branco</span>
+                    <span class="badge" style="color: white;background-color: var(--wine-dark)">Chocolate ao Leite</span>
+                    <span class="badge" style="color: white;background-color: var(--wine-dark)">Chocolate Amargo</span>
+                    <span class="badge" style="color: white;background-color: var(--wine-dark)">Morango</span>
+                    <span class="badge" style="color: white;background-color: var(--wine-dark)">Uva</span>
+
+                    <div class="input-group mt-3">
+
+                        <button class="btn btn-outline-secondary" style="color: white; background-color: var(--navy-soft); border-color: var(--navy-soft); border-radius: 5px;">
+                            <i class="bi bi-dash"></i>
+                        </button>
+
+                        <input
+                            class="form-control text-center"
+                            value="1"
+                        >
+
+                        <button class="btn btn-outline-secondary" style="color: white; background-color: var(--navy-soft); border-color: var(--navy-soft); border-radius: 5px;">
+                            <i class="bi bi-plus"></i>
+                        </button>
+
+                    </div>
+
+                    <button class="btn btn-encomenda w-100 mt-3" id="texto">
+                        <i class="bi bi-cart-plus me-2"></i>
+                        Adicionar
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- ======================================= -->
+        <!-- CHOCOLATE QUENTE -->
+        <!-- ======================================= -->
+
+        <div class="col-12 col-md-6 col-lg-4 produto">
+
+            <div class="card h-100">
+
+                <div class="ph">
+                    <i class="bi bi-image fs-1"></i>
+                    <small>Foto do produto</small>
+                </div>
+
+                <div class="card-body">
+
+                    <h5 class="nome">
+                        Chocolate Quente
+                    </h5>
+
+                    <span class="badge" style="color: white;background-color: var(--wine-dark)">Tradicional</span>
+                    <span class="badge" style="color: white;background-color: var(--wine-dark)">Nutella</span>
+                    <span class="badge" style="color: white;background-color: var(--wine-dark)">Doce de Leite</span>
+                    <span class="badge" style="color: white;background-color: var(--wine-dark)">Caramelo Salgado</span>
+                    <span class="badge" style="color: white;background-color: var(--wine-dark)">Pistache</span>
+
+                    <div class="input-group mt-3">
+
+                        <button class="btn btn-outline-secondary" style="color: white; background-color: var(--navy-soft); border-color: var(--navy-soft); border-radius: 5px;">
+                            <i class="bi bi-dash"></i>
+                        </button>
+
+                        <input
+                            class="form-control text-center"
+                            value="1"
+                        >
+
+                        <button class="btn btn-outline-secondary" style="color: white; background-color: var(--navy-soft); border-color: var(--navy-soft); border-radius: 5px;">
+                            <i class="bi bi-plus"></i>
+                        </button>
+
+                    </div>
+
+                    <button class="btn btn-encomenda w-100 mt-3" id="texto">
+                        <i class="bi bi-cart-plus me-2"></i>
+                        Adicionar
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+
+ <script>
+   const i = document.getElementById("pesquisa");
+
+    i.oninput = () => {
+
+        let t = i.value.toLowerCase();
+
+        document.querySelectorAll(".produto").forEach(c => {
+
+            c.style.display = c.querySelector(".nome")
+                .textContent
+                .toLowerCase()
+                .includes(t)
+                ? ""
+                : "none";
+
+        });
+
+    };
+
+</script>
+
 </body>
+
+    
 
 </html>
