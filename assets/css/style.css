@@ -431,6 +431,17 @@ h3 {
    line-height: 1.45;
 }
 
+.verMais {
+    color: var(--navy);
+    transition: color 0.3s ease;
+}
+
+.verMais:hover {
+    color: var(--wine);
+}
+
+
+
 /* 7. CARDÁPIO */
 
 #texto {
