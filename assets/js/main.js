@@ -10,3 +10,6 @@ document.addEventListener('DOMContentLoaded', () => {
   iniciarNewsletter();
   iniciarNavegacaoAtiva();
 });
+
+
+

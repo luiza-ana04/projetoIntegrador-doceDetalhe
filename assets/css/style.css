@@ -933,6 +933,7 @@ h3 {
 }
 
 .nav-link {
+    width: fit-content;
     position: relative;
     display: inline-block;
     color: white;
