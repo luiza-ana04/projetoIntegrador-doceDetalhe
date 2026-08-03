@@ -432,12 +432,14 @@ h3 {
 }
 
 .verMais {
-    color: var(--navy);
+    border-radius: 4px;
+    background: var(--wine);
+    padding: 6px 12px;
     transition: color 0.3s ease;
 }
 
 .verMais:hover {
-    color: var(--wine);
+    background: rgba(109, 7, 21, 0.8);
 }
 
 
@@ -523,7 +525,7 @@ h3 {
 }
 
 .product-card a {
-   color: var(--wine);
+   color: var(--white);
    font-size: .68rem;
    font-weight: 700;
    text-transform: uppercase;
