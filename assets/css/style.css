@@ -452,6 +452,8 @@ h3 {
 }
 
 #texto:hover {
+   background: white;
+   border-color: var(--wine);
     color: var(--wine);
 }
 
@@ -861,6 +863,8 @@ h3 {
 }
 
 /*11. RODAPÉ*/
+
+
 .main-footer {
    position: relative;
    color: white;
@@ -900,6 +904,14 @@ h3 {
    border: 1px solid rgba(233, 197, 141, .45);
    border-radius: 50%;
    color: var(--gold-light);
+}
+
+.social-links a:hover {
+ background: white;
+ color: var(--wine);
+ border: 1px solid var(--wine);
+  border-radius: 50%;
+transform:translateY(-6px);
 }
 
 .footer-column {
@@ -963,6 +975,29 @@ h3 {
     color: #D4AF37;
 }
 
+/* Sobre Nós */
+.estrutura-sobre {
+    transition: 0.3s;
+   border-radius: 10px;
+}
+
+.estrutura-sobre:hover {
+       box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.9);
+    transform: scale(1.03);
+}
+
+/* Cardápio */
+.produto {
+   transition: 0.3s;
+   border-radius: 10px;
+   display: flex;
+   flex-direction: space-between;
+}
+
+.produto:hover {
+   transform: translateY(-7px);
+   box-shadow: var(--shadow);
+}
 
 
 
@@ -1303,3 +1338,55 @@ h3 {
 .page-card p+p {
    margin-top: 14px;
 }
+
+/* ---------BLOG----------- */
+.section-sub {
+  color: var(--color-gold);
+  font-size: 0.75rem;
+  letter-spacing: 2.5px;
+  text-transform: uppercase;
+  font-weight: 600;
+  display: block;
+  margin-bottom: 0.3rem;
+}
+
+.btn-gold-whatsapp {
+  background-color: #25d366;
+  color: #ffffff !important;
+  border-radius: 50px;
+  padding: 1rem 2.5rem;
+  font-size: 1rem;
+  font-weight: 700;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.75rem;
+  box-shadow: 0 8px 20px rgba(37, 211, 102, 0.3);
+  transition: all 0.3s ease;
+  text-decoration: none;
+}
+
+/* Efeito do botão do WhatsApp ao passar o mouse */
+.btn-gold-whatsapp:hover {
+  background-color: #1eb956;
+  transform: translateY(-3px);
+  box-shadow: 0 12px 25px rgba(37, 211, 102, 0.4);
+}
+
+.bg-cream {
+  background-color: var(--color-cream-bg);
+}
+
+.bg-burgundy {
+  background-color: var(--color-burgundy);
+}
+
+.bg-navy {
+  background-color: var(--color-navy);
+}
+
+.text-gold {
+  color: var(--color-gold) !important;
+}
+
+.text-burgundy {
+  color: var(--color-burgundy) !important;

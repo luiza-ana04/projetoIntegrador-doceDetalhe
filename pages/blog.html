@@ -13,6 +13,9 @@
         href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Montserrat:wght@400;500;600;700&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="../assets/css/style.css">
 </head>
 
@@ -40,79 +43,151 @@
             </div>
         </section>
         <!-- CARD'S-->
-        <div class="container">
+        <div class="container my-5">
+            <div class="text-center mb-5">
+                <span class="section-sub">Nosso Cantinho de Receitas & Dicas</span>
+                <h2 class="font-serif display-5 fw-bold text-burgundy">Blog Doce Detalhe</h2>
+            </div>
 
-            <div class="cards">
-
-                <div class="card">
-                    <img src="https://picsum.photos/400/250?random=1" alt="">
-                    <div class="card-content">
-                        <h3>Bolo de Chocolate</h3>
-                        <p>Aprenda a preparar um bolo fofinho com cobertura cremosa de chocolate.</p>
-                        <button>Leia mais</button>
+            <!-- Cards dos artigos disponíveis no blog -->
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="card border-0 shadow-sm rounded-4 overflow-hidden h-100">
+                        <img src="https://plus.unsplash.com/premium_photo-1676226769648-d59f05b44089?q=80&w=1169&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                            class="card-img-top" style="height:220px; object-fit:cover;" alt="Tendências de Bolos" />
+                        <div class="card-body p-4 d-flex flex-column">
+                            <span class="badge bg-light text-burgundy w-auto align-self-start mb-2">TENDÊNCIAS</span>
+                            <h3 class="font-serif fs-5 fw-bold text-burgundy">Tendências em Bolos de Casamento para 2026
+                            </h3>
+                            <p class="small text-muted flex-grow-1">Descubra as decorações minimalistas, textura com
+                                espátulas e
+                                flores desidratadas que são sucesso total.</p>
+                            <a href="tendencias-bolos-casamento-2026.html" class="text-burgundy fw-bold small text-decoration-none">Ler Artigo Completo <i
+                                    class="bi bi-arrow-right"></i></a>
+                        </div>
                     </div>
                 </div>
 
-                <div class="card">
-                    <img src="https://picsum.photos/400/250?random=2" alt="">
-                    <div class="card-content">
-                        <h3>Cupcakes Decorados</h3>
-                        <p>Ideias criativas para decorar cupcakes para festas e aniversários.</p>
-                        <button>Leia mais</button>
+                <div class="col-md-4">
+                    <div class="card border-0 shadow-sm rounded-4 overflow-hidden h-100">
+                        <img src="https://images.unsplash.com/photo-1569864358642-9d1684040f43?auto=format&fit=crop&w=600&q=80"
+                            class="card-img-top" style="height:220px; object-fit:cover;" alt="Macarons" />
+                        <div class="card-body p-4 d-flex flex-column">
+                            <span class="badge bg-light text-burgundy w-auto align-self-start mb-2">SEGREDOS</span>
+                            <h3 class="font-serif fs-5 fw-bold text-burgundy">A Delicada Arte do Macaron Francês</h3>
+                            <p class="small text-muted flex-grow-1">Saiba o que faz a casquinha crocante e o recheio
+                                cremoso serem o
+                                ápice da confeitaria europeia.</p>
+                            <a href="#" class="text-burgundy fw-bold small text-decoration-none">Ler Artigo Completo <i
+                                    class="bi bi-arrow-right"></i></a>
+                        </div>
                     </div>
                 </div>
 
-                <div class="card">
-                    <img src="https://picsum.photos/400/250?random=3" alt="">
-                    <div class="card-content">
-                        <h3>Macarons</h3>
-                        <p>Descubra os segredos para fazer macarons perfeitos e coloridos.</p>
-                        <button>Leia mais</button>
+                <div class="col-md-4">
+                    <div class="card border-0 shadow-sm rounded-4 overflow-hidden h-100">
+                        <img src="https://plus.unsplash.com/premium_photo-1663839412165-0d60a57e7a91?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                            class="card-img-top" style="height:220px; object-fit:cover;" alt="Doces Finos" />
+                        <div class="card-body p-4 d-flex flex-column">
+                            <span class="badge bg-light text-burgundy w-auto align-self-start mb-2">DICAS</span>
+                            <h3 class="font-serif fs-5 fw-bold text-burgundy">Como Calcular a Quantidade de Doces por
+                                Pessoa</h3>
+                            <p class="small text-muted flex-grow-1">Guia simples e prático para não faltar nem sobrar
+                                docinhos finos
+                                no seu evento especial.</p>
+                            <a href="#" class="text-burgundy fw-bold small text-decoration-none">Ler Artigo Completo <i
+                                    class="bi bi-arrow-right"></i></a>
+                        </div>
                     </div>
+                </div>
+                <!-- Final CARD'S-->
+    </main>
+
+    <!-- ==================== RODAPÉ ==================== -->
+    <footer class="main-footer" id="contato">
+        <div class="container footer-grid">
+            <div class="footer-brand">
+                <img src="../assets/img/logo.png" alt="Logo Doce Detalhe">
+                <p>Doçura feita com amor, para momentos que ficam na memória.</p>
+                <div class="social-links">
+
+
+
+                    <a href="https://instagram.com/docedetalhe.confeitaria" target="_blank" <a href="#"><i
+                            class="fa-brands fa-instagram"></i>
+                    </a>
+                    </a>
+
+                    <a href="https://facebook.com/docedetalhe.confeitaria" target="_blank" <a href="#"><i
+                            class="fa-brands fa-facebook-f"></i>
+                    </a>
+                    </a>
+
+                    <a href="https://wa.me/5541999999999" target="_blank" <a href="#"><i
+                            class="fa-brands fa-whatsapp"></i>
+                    </a>
+                    </a>
                 </div>
 
-                <div class="card">
-                    <img src="https://picsum.photos/400/250?random=4" alt="">
-                    <div class="card-content">
-                        <h3>Cheesecake</h3>
-                        <p>Receita cremosa com calda de frutas vermelhas irresistível.</p>
-                        <button>Leia mais</button>
-                    </div>
-                </div>
+            </div>
 
-                <div class="card">
-                    <img src="https://picsum.photos/400/250?random=5" alt="">
-                    <div class="card-content">
-                        <h3>Brownie</h3>
-                        <p>Brownie crocante por fora e macio por dentro com muito chocolate.</p>
-                        <button>Leia mais</button>
-                    </div>
-                </div>
+            <div class="footer-column ">
+                <h3>Navegação</h3>
+                <a class="nav-link" href="index.html#inicio">Início</a>
+                <a class="nav-link" href="pages/sobre.html">Sobre nós</a>
+                <a class="nav-link" href="pages/cardapio.html">Cardápio</a>
+                <a class="nav-link" href="#encomendas">Encomendas</a>
+                <a class="nav-link" href="pages/blog.html">Blog</a>
+                <a class="nav-link" href="#depoimentos">Depoimentos</a>
+                <a class="nav-link" href="pages/contato.html">Contato</a>
+            </div>
 
-                <div class="card">
-                    <img src="https://picsum.photos/400/250?random=6" alt="">
-                    <div class="card-content">
-                        <h3>Torta de Morango</h3>
-                        <p>Uma deliciosa combinação de creme, morangos frescos e massa crocante.</p>
-                        <button>Leia mais</button>
-                    </div>
-                </div>
+            <div class="footer-column ">
+                <h3>Informações</h3>
 
-                <div class="card">
-                    <img src="https://picsum.photos/400/250?random=7" alt="">
-                    <div class="card-content">
-                        <h3>Brigadeiro Gourmet</h3>
-                        <p>Conheça sabores especiais e técnicas para brigadeiros irresistíveis.</p>
-                        <button>Leia mais</button>
-                    </div>
-                </div>
+                <a class="nav-link" href="#encomendas">Como funciona</a>
+
+                <a class="nav-link" href="#">Formas
+                    de pagamento</a>
+
+                <a class="nav-link" href="#">Entrega e prazo</a>
+
+                <a class="nav-link" href="#">Perguntas frequentes</a>
+
+                <a class="nav-link" href="#">Política de privacidade</a>
+
+                <a class="nav-link" href="#">Termos de uso</a>
+
+            </div>
+
+            <div class="footer-column">
+                <h3>Atendimento</h3>
+
+
+                <a class="nav-link" href="https://wa.me/554199999-9999" target="_blank">
+                    <p class="m-0"><i class="fa-brands fa-whatsapp"></i> (41) 99999-9999</p>
+                </a>
+
+                <a href="mailto:docedetalhe@gmail.com" class="nav-link">
+                    <p class="m-0"><i class="fa-regular fa-envelope"></i> docedetalhe@gmail.com</p>
+                </a>
+
+                <p class="nav-link"><i class="fa-regular fa-clock"></i> Seg. a Sex: 9h às 18h</p>
+
+                <p class="nav-link"><i class="fa-solid fa-location-dot"></i> Paranaguá - PR</p>
 
             </div>
 
         </div>
 
-        <!-- Final CARD'S-->
-    </main>
+
+        <div class="container footer-bottom">
+            <p>© 2026 Doce Detalhe Confeitaria. Todos os direitos reservados. ♥</p>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+        crossorigin="anonymous"></script>
     <script type="module" src="../assets/js/main.js"></script>
 </body>
 
