@@ -980,6 +980,54 @@
 
     </script>
 
+    <!-- ==================== SACOLA / OFF-CANVAS DE ORÇAMENTO ==================== -->
+<!-- Botão flutuante para abrir a sacola -->
+<button class="btn-cart-float" type="button" data-bs-toggle="offcanvas" data-bs-target="#sacolaOrcamento" aria-controls="sacolaOrcamento">
+  <i class="bi bi-bag-check-fill"></i>
+  <span class="badge rounded-pill bg-danger" id="cart-count">0</span>
+</button>
+
+<!-- Estrutura Offcanvas (Aba Lateral do Bootstrap) -->
+<div class="offcanvas offcanvas-end" tabindex="-1" id="sacolaOrcamento" aria-labelledby="sacolaOrcamentoLabel">
+  <div class="offcanvas-header bg-navy text-white">
+    <h5 class="offcanvas-title font-title" id="sacolaOrcamentoLabel">
+      <i class="bi bi-bag-heart me-2"></i>Seu Orçamento
+    </h5>
+    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  </div>
+  
+  <div class="offcanvas-body d-flex flex-column justify-content-between">
+    <!-- Lista Dinâmica de Produtos -->
+    <div>
+      <h6 class="text-muted mb-3 border-bottom pb-2">Produtos Selecionados</h6>
+      <div id="cart-items" class="cart-items-list mb-4">
+        <p class="text-center text-muted my-4" id="empty-cart-msg">Sua sacola está vazia.</p>
+      </div>
+    </div>
+
+    <!-- Agenda de Data do Evento e Ação do WhatsApp -->
+    <div class="border-top pt-3 mt-auto">
+      <div class="mb-3">
+        <label for="dataEvento" class="form-label fw-bold text-navy" style="font-size: 0.85rem;">
+          <i class="bi bi-calendar-event me-1"></i>Data Prevista do Evento:
+        </label>
+        <input type="date" class="form-control" id="dataEvento" required>
+      </div>
+
+      <div class="mb-3">
+        <label for="obsEvento" class="form-label fw-bold text-navy" style="font-size: 0.85rem;">
+          <i class="bi bi-pencil-square me-1"></i>Observações / Tema:
+        </label>
+        <textarea class="form-control" id="obsEvento" rows="2" placeholder="Ex: Tema jardim encantado, recheio de morango..."></textarea>
+      </div>
+
+      <button type="button" class="btn btn-success w-100 py-2 fw-bold d-flex align-items-center justify-content-center gap-2" id="btnEnviarWhatsApp">
+        <i class="bi bi-whatsapp fs-5"></i> Enviar Orçamento no WhatsApp
+      </button>
+    </div>
+  </div>
+</div>
+
 </body>
 
 

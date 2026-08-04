@@ -1390,3 +1390,83 @@ transform:translateY(-6px);
 
 .text-burgundy {
   color: var(--color-burgundy) !important;
+}
+
+/* ==================== ESTILOS DA SACOLA LATERA/CARRINHO ==================== */
+
+/* Botão Flutuante de Acesso à Sacola */
+.btn-cart-float {
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+  z-index: 1050;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background: var(--wine);
+  color: var(--white);
+  border: 2px solid var(--gold);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+.btn-cart-float:hover {
+  transform: scale(1.1);
+  background: var(--wine-dark);
+}
+
+.btn-cart-float .badge {
+  position: absolute;
+  top: -2px;
+  right: -2px;
+  font-size: 0.75rem;
+  border: 1px solid var(--white);
+}
+
+/* Offcanvas Personalizado */
+.offcanvas-header {
+  background-color: var(--navy-soft) !important;
+  border-bottom: 2px solid var(--gold);
+}
+
+.cart-items-list {
+  max-height: 50vh;
+  overflow-y: auto;
+}
+
+.cart-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+  border-bottom: 1px dashed var(--border);
+}
+
+.cart-item-title {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--navy);
+  margin: 0;
+}
+
+.cart-item-qty {
+  font-size: 0.8rem;
+  color: var(--muted);
+}
+
+.btn-remove-item {
+  background: transparent;
+  border: none;
+  color: var(--wine-light);
+  font-size: 1rem;
+  transition: color 0.2s;
+}
+
+.btn-remove-item:hover {
+  color: var(--wine-dark);
+}
+
