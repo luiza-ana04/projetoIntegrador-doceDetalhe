@@ -15,24 +15,25 @@ document.addEventListener('DOMContentLoaded', () => {
   const cardsProdutos = document.querySelectorAll('.produto');
 
   cardsProdutos.forEach((card) => {
-    const btnAdicionar = card.querySelector('button[id="texto"]');
-    const inputQtd = card.querySelector('input');
+    const btnAdicionar = card.querySelector('.adicionar');
+    const inputQtd = card.querySelector('.quantidade');
     const btnPlus = card.querySelector('.bi-plus')?.parentElement;
     const btnDash = card.querySelector('.bi-dash')?.parentElement;
+    
 
     // Controles de quantidade (+ e -) nos cards
     if (btnPlus && inputQtd) {
       btnPlus.onclick = (e) => {
         e.preventDefault();
-        inputQtd.value = parseInt(inputQtd.value || 0) + 1;
+        inputQtd.textContent = parseInt(inputQtd.textContent || 0) + 1;
       };
     }
 
     if (btnDash && inputQtd) {
       btnDash.onclick = (e) => {
         e.preventDefault();
-        if (parseInt(inputQtd.value) > 1) {
-          inputQtd.value = parseInt(inputQtd.value) - 1;
+        if (parseInt(inputQtd.textContent) > 1) {
+          inputQtd.textContent = parseInt(inputQtd.textContent) - 1;
         }
       };
     }
@@ -42,7 +43,7 @@ document.addEventListener('DOMContentLoaded', () => {
       btnAdicionar.addEventListener('click', (e) => {
         e.preventDefault();
         const nomeProduto = card.querySelector('.nome').textContent.trim();
-        const quantidade = parseInt(inputQtd ? inputQtd.value : 1);
+        const quantidade = parseInt(inputQtd ? inputQtd.textContent : 1);
 
         adicionarAoCarrinho(nomeProduto, quantidade);
       });
@@ -60,6 +61,8 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     atualizarInterfaceSacola();
+
+    window.adicionarAoCarrinho = adicionarAoCarrinho;
 
     // Notificação visual simples no botão do offcanvas
     const offcanvasEl = document.getElementById('sacolaOrcamento');

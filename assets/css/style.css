@@ -169,6 +169,7 @@ h3 {
 .button-light:hover {
    transform: translateY(-2px);
    background: var(--white);
+   color: var(--wine);
 }
 
 .text-link {
@@ -985,6 +986,17 @@ transform:translateY(-6px);
        box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.9);
     transform: scale(1.03);
 }
+.produto {
+   transition: 0.3s;
+   border-radius: 10px;
+   display: flex;
+   flex-direction: space-between;
+}
+
+.produto:hover {
+   transform: translateY(-7px);
+   box-shadow: var(--shadow);
+}
 
 /* Cardápio */
 .produto {
@@ -998,7 +1010,34 @@ transform:translateY(-6px);
    transform: translateY(-7px);
    box-shadow: var(--shadow);
 }
+.adicionar {
+   color: var(--navy);
+}
+.adicionar:hover {
+   color: var(--wine);
+   border-color: var(--wine);
+}
+.produto-acoes{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    margin-top: 10px;
+}
 
+.controle-quantidade{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+.quantidade{
+    min-width: 30px;
+    text-align: center;
+    font-weight: 600;
+    font-size: 18px;
+}
 
 
 /*12. RESPONSIVIDADE*/
