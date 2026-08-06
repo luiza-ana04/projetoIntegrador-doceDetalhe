@@ -46,7 +46,6 @@ a {
    text-decoration: none;
 }
 
-
 .main-nav a {
     position: relative;
     display: inline-block;
@@ -1133,7 +1132,7 @@ transform:translateY(-6px);
       flex-direction: column;
       gap: 0;
       padding: 15px 25px 24px;
-      background: #fbf5ef;
+      background: #ead7c6;
       border-bottom: 1px solid var(--border);
       box-shadow: var(--shadow);
    }

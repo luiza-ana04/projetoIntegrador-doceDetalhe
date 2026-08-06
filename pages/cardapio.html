@@ -1223,51 +1223,7 @@
 
     </script>
 
-  <!-- <script>
-
-document.querySelectorAll(".produto-acoes").forEach(area => {
-
-    const btnAdicionar = area.querySelector(".adicionar");
-    const btnMais = area.querySelector(".aumentar");
-    const btnMenos = area.querySelector(".diminuir");
-    const quantidade = area.querySelector(".quantidade");
-
-    let valor = 1;
-
-    quantidade.textContent = valor;
-
-    btnMais.addEventListener("click", function () {
-
-        valor++;
-        quantidade.textContent = valor;
-
-    });
-
-    btnMenos.addEventListener("click", function () {
-
-        if (valor > 1) {
-
-            valor--;
-            quantidade.textContent = valor;
-
-        }
-
-    });
-
-    btnAdicionar.addEventListener("click", function () {
-
-        // Aqui você chama a função do seu carrinho
-        // adicionarAoCarrinho(...);
-
-        // Se quiser que volte para 1 após adicionar:
-        valor = 1;
-        quantidade.textContent = valor;
-
-    });
-
-});
-
-</script> -->
+  <script type="module" src="../assets/js/main.js"></script>
 
 <script src="../assets/js/cart.js">
 
