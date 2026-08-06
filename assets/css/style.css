@@ -891,6 +891,10 @@ h3 {
    font-size: .72rem;
 }
 
+.footer-brand p:hover {
+   color: var(--gold-light);
+}
+
 .social-links {
    display: flex;
    gap: 10px;
@@ -945,6 +949,15 @@ transform:translateY(-6px);
    border-top: 1px solid rgba(233, 197, 141, .2);
    text-align: center;
    font-size: .66rem;
+}
+
+.footer-bottom:hover {
+   border-top: 1px solid rgba(233, 197, 141, .2);
+   width: 100%;
+}
+
+.footer-bottom p:hover {
+   color: var(--gold-light);
 }
 
 .nav-link {
@@ -1318,6 +1331,25 @@ transform:translateY(-6px);
    }
 }
 
+/* Contato */
+.card-contato {
+   transition: transform .25s, box-shadow .25s;
+}
+
+.card-contato:hover {
+   transform: translateY(-7px);
+   box-shadow: var(--shadow);
+}
+.estrutura-contato {
+   transition: 0.3s;
+   border-radius: 10px;
+}
+
+.estrutura-contato:hover {
+       box-shadow: 0px 8px 20px rgba(206, 206, 206, 0.9);
+    transform: scale(1.03);
+}
+
 
 /* 13. ACESSIBILIDADE E PÁGINAS INTERNAS*/
 :focus-visible {
@@ -1429,6 +1461,15 @@ transform:translateY(-6px);
 
 .text-burgundy {
   color: var(--color-burgundy) !important;
+}
+
+.card-blog {
+    transition: transform .25s, box-shadow .25s;
+}
+
+.card-blog:hover {
+   transform: translateY(-7px);
+   box-shadow: var(--shadow);
 }
 
 /* ==================== ESTILOS DA SACOLA LATERA/CARRINHO ==================== */
